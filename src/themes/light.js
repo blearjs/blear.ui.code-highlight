@@ -8,6 +8,6 @@
 
 'use strict';
 
-require('../../prismjs/themes/prism-default.css', 'css|style');
+require('./light.css', 'css|style');
 
 
