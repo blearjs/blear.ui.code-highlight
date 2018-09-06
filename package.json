@@ -1,5 +1,5 @@
 {
-  "name": "blear.util.code-highlight",
+  "name": "blear.utils.code-highlight",
   "version": "1.0.0",
   "description": "代码高亮，基于 prism@1.15.0",
   "scripts": {
@@ -25,13 +25,13 @@
     "url": "https://ydr.me"
   },
   "contributors": [],
-  "homepage": "https://github.com/blearjs/blear.util.code-highlight",
+  "homepage": "https://github.com/blearjs/blear.utils.code-highlight",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blearjs/blear.util.code-highlight"
+    "url": "https://github.com/blearjs/blear.utils.code-highlight"
   },
   "bugs": {
-    "url": "https://github.com/blearjs/blear.util.code-highlight/issues"
+    "url": "https://github.com/blearjs/blear.utils.code-highlight/issues"
   },
   "dependencies": {
     "blear.utils.array": "^1.0.12",

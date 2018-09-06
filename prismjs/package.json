@@ -22,7 +22,7 @@
   "_resolved": "http://registry.npm.taobao.org/prismjs/download/prismjs-1.15.0.tgz",
   "_shasum": "8801d332e472091ba8def94976c8877ad60398d9",
   "_spec": "prismjs",
-  "_where": "/Users/cloudcome/development/github-blearjs/blear.util.code-highlight",
+  "_where": "/Users/cloudcome/development/github-blearjs/blear.utils.code-highlight",
   "author": {
     "name": "Lea Verou"
   },
