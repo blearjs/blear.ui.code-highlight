@@ -1,7 +1,7 @@
 {
   "name": "blear.util.code-highlight",
   "version": "1.0.0",
-  "description": "描述",
+  "description": "代码高亮，基于 prism@1.15.0",
   "scripts": {
     "live": "browser-sync start --config bs-config.js",
     "test": "node ./node_modules/.bin/karma start karma.conf.js --single-run",
