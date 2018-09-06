@@ -33,10 +33,13 @@
   "bugs": {
     "url": "https://github.com/blearjs/blear.util.code-highlight/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "blear.utils.array": "^1.0.12",
+    "blear.utils.loader": "^1.0.14"
+  },
   "peerDependencies": {},
   "devDependencies": {
-    "coolie.js": "2.2.3",
+    "coolie.js": "^2.3.0",
     "jasmine-core": "2.8.0",
     "karma": "1.7.1",
     "karma-chrome-launcher": "2.2.0",
