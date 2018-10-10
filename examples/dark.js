@@ -11,4 +11,4 @@ var codeHighlight = require('../src/index');
 require('../src/themes/dark');
 
 
-codeHighlight();
+codeHighlight.element();

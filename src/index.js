@@ -15,10 +15,19 @@ require('../prismjs/components/prism-css');
 require('../prismjs/components/prism-javascript');
 
 /**
- * 高亮区域代码
+ * 高亮区域代码【浏览器渲染】
  * @param [el=body]
  */
-module.exports = function (el) {
+exports.element = function (el) {
     el = el || document.body;
     prism.highlightAllUnder(el);
+};
+
+/**
+ * 高亮文本【服务端渲染】
+ * @param text
+ * @param language
+ */
+exports.text = function (text, language) {
+    return prism.highlight(text, prism.languages[language], language);
 };
