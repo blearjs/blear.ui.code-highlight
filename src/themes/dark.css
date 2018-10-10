@@ -8,7 +8,7 @@
   margin: .5em 0;
   overflow: auto; }
   .prism,
-  .prism > code {
+  .prism code {
     background: #2d2d2d;
     color: #ccc;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -25,10 +25,6 @@
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none; }
-  .prism > code {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: pre; }
   .prism .token.comment,
   .prism .token.block-comment,
   .prism .token.prolog,

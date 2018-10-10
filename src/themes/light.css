@@ -4,8 +4,9 @@
  * @author Lea Verou
  */
 .prism {
-  /* Code blocks */
-  /* Inline code */ }
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto; }
   .prism,
   .prism code {
     color: black;
@@ -25,14 +26,6 @@
     -ms-hyphens: none;
     hyphens: none;
     background: #f5f2f0; }
-  .prism {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto; }
-  .prism code {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: pre; }
   .prism::-moz-selection,
   .prism code::-moz-selection {
     text-shadow: none;

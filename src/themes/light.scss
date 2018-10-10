@@ -5,6 +5,9 @@
  */
 
 .prism {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
 
   &,
   code {
@@ -27,20 +30,6 @@
     -ms-hyphens: none;
     hyphens: none;
     background: #f5f2f0;
-  }
-
-  /* Code blocks */
-  & {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto;
-  }
-
-  /* Inline code */
-  code {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: pre;
   }
 
   &::-moz-selection,

@@ -10,7 +10,7 @@
   overflow: auto;
 
   &,
-  & > code {
+  code {
     background: #2d2d2d;
     color: #ccc;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -29,12 +29,6 @@
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-  }
-
-  & > code {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: pre;
   }
 
   .token.comment,
