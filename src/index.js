@@ -29,13 +29,23 @@ exports.element = function (el) {
  * 高亮文本【服务端渲染】
  * @param text
  * @param lang
+ * @param [wrap=false]
  */
-exports.text = function (text, lang) {
+exports.text = function (text, lang, wrap) {
     var grammar = prism.languages[lang];
 
     if (!grammar) {
         return string.escapeHTML(text);
     }
 
-    return prism.highlight(text, grammar, lang);
+    var html = prism.highlight(text, grammar, lang);
+
+    if (wrap) {
+        html = '<pre class="language-' + lang + ' prism" data-language="' + lang + '"><code class="language-' + lang + '">' +
+            html +
+            '</code></pre>';
+    }
+
+    return html;
 };
+
