@@ -4,8 +4,7 @@
  * @author Rose Pritchard
  */
 .prism {
-  padding: 1em;
-  margin: .5em 0;
+  padding: 20px;
   overflow: auto; }
   .prism,
   .prism code {

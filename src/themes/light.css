@@ -4,8 +4,7 @@
  * @author Lea Verou
  */
 .prism {
-  padding: 1em;
-  margin: .5em 0;
+  padding: 20px;
   overflow: auto; }
   .prism,
   .prism code {
@@ -67,8 +66,7 @@
   .prism .token.url,
   .prism .language-css .token.string,
   .prism .style .token.string {
-    color: #9a6e3a;
-    background: rgba(255, 255, 255, 0.5); }
+    color: #9a6e3a; }
   .prism .token.atrule,
   .prism .token.attr-value,
   .prism .token.keyword {
