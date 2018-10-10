@@ -6,6 +6,8 @@
 
 'use strict';
 
+var string = require('blear.utils.string');
+
 var prism = require('../prismjs/prism');
 
 require('../prismjs/components/prism-clike');
@@ -26,8 +28,14 @@ exports.element = function (el) {
 /**
  * 高亮文本【服务端渲染】
  * @param text
- * @param language
+ * @param lang
  */
-exports.text = function (text, language) {
-    return prism.highlight(text, prism.languages[language], language);
+exports.text = function (text, lang) {
+    let grammar = prism.languages[lang];
+
+    if (!grammar) {
+        return string.escapeHTML(text);
+    }
+
+    return prism.highlight(text, grammar, lang);
 };
