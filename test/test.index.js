@@ -9,7 +9,8 @@
 
 var codeHighlight = require('../src/index.js');
 
-describe('测试文件', function () {
+describe('blear.utils.code-highlight', function () {
+
     it('highlight js', function (done) {
         var text = 'var a = 1;';
         var html = codeHighlight.text(text, 'js');
@@ -37,4 +38,12 @@ describe('测试文件', function () {
         console.log(html);
         done();
     });
+
+    it('highlight wrap', function (done) {
+        var text = '<h1>Hello</h1>';
+        var html = codeHighlight.text(text, 'unkndow', true);
+        console.log(html);
+        done();
+    });
+
 });

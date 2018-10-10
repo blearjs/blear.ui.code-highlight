@@ -33,12 +33,9 @@ exports.element = function (el) {
  */
 exports.text = function (text, lang, wrap) {
     var grammar = prism.languages[lang];
-
-    if (!grammar) {
-        return string.escapeHTML(text);
-    }
-
-    var html = prism.highlight(text, grammar, lang);
+    var html = grammar
+        ? prism.highlight(text, grammar, lang)
+        : string.escapeHTML(text);
 
     if (wrap) {
         html = '<pre class="language-' + lang + ' prism" data-language="' + lang + '"><code class="language-' + lang + '">' +
