@@ -30,4 +30,11 @@ describe('测试文件', function () {
         console.log(html);
         done();
     });
+
+    it('highlight unkndow', function (done) {
+        var text = '<h1>Hello</h1>';
+        var html = codeHighlight.text(text, 'unkndow');
+        console.log(html);
+        done();
+    });
 });
