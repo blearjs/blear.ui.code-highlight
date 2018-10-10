@@ -1,3 +1,4 @@
+@import "prism";
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -5,12 +6,11 @@
  */
 
 .prism {
-  padding: 20px;
-  overflow: auto;
+  @include prism();
 
   &,
   code {
-    background: #2d2d2d;
+    background: #282c34;
     color: #ccc;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
@@ -92,6 +92,7 @@
   .token.bold {
     font-weight: bold;
   }
+
   .token.italic {
     font-style: italic;
   }

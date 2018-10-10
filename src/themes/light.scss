@@ -1,3 +1,5 @@
+@import "prism";
+
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -5,8 +7,7 @@
  */
 
 .prism {
-  padding: 20px;
-  overflow: auto;
+  @include prism();
 
   &,
   code {
