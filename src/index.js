@@ -31,7 +31,7 @@ exports.element = function (el) {
  * @param lang
  */
 exports.text = function (text, lang) {
-    let grammar = prism.languages[lang];
+    var grammar = prism.languages[lang];
 
     if (!grammar) {
         return string.escapeHTML(text);
