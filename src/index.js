@@ -1,5 +1,5 @@
 /**
- * blear.utils.code-highlight
+ * blear.ui.code-highlight
  * @author ydr.me
  * @create 2018年09月06日14:30:42
  */
