@@ -9,7 +9,7 @@
 
 var codeHighlight = require('../src/index.js');
 
-describe('blear.utils.code-highlight', function () {
+describe('blear.ui.code-highlight', function () {
 
     it('highlight js', function (done) {
         var text = 'var a = 1;';
