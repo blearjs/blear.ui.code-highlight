@@ -6,19 +6,21 @@
 .prism {
   position: relative;
   padding: 20px;
-  overflow: auto; }
+  font-size: 0;
+  margin: 0 0 20px;
+  background: #282c34;
+  color: #ccc; }
   .prism:before {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #888;
+    color: #acacac;
     font-size: 14px; }
   .prism[class*=language-]:before {
     content: attr(data-language); }
-  .prism,
   .prism code {
-    background: #282c34;
-    color: #ccc;
+    display: block;
+    overflow: auto;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     white-space: pre;
@@ -26,8 +28,7 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
+    font-size: 14px;
     tab-size: 4;
     -webkit-hyphens: none;
     -moz-hyphens: none;

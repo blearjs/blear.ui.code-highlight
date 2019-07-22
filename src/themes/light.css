@@ -6,19 +6,21 @@
 .prism {
   position: relative;
   padding: 20px;
-  overflow: auto; }
+  font-size: 0;
+  margin: 0 0 20px;
+  color: black;
+  background: #f5f2f0; }
   .prism:before {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #888;
+    color: #acacac;
     font-size: 14px; }
   .prism[class*=language-]:before {
     content: attr(data-language); }
-  .prism,
   .prism code {
-    color: black;
-    text-shadow: 0 1px white;
+    display: block;
+    overflow: auto;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     white-space: pre;
@@ -26,17 +28,14 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
+    font-size: 14px;
     tab-size: 4;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none;
-    background: #f5f2f0; }
+    hyphens: none; }
   .prism::-moz-selection,
   .prism code::-moz-selection {
-    text-shadow: none;
     background: #b3d4fc; }
   .prism::selection,
   .prism code::selection {

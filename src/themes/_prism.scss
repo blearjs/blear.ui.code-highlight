@@ -3,17 +3,39 @@
 @mixin prism() {
   position: relative;
   padding: 20px;
-  overflow: auto;
+  font-size: 0;
+  margin: 0 0 20px;
 
   &:before {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #888;
+    color: #acacac;
     font-size: 14px;
   }
 
   &[class*=language-]:before {
     content: attr(data-language);
+  }
+
+  code {
+    display: block;
+    overflow: auto;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    font-size: 14px;
+
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
   }
 }

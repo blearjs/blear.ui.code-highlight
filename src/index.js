@@ -38,7 +38,8 @@ exports.text = function (text, lang, wrap) {
         : string.escapeHTML(text);
 
     if (wrap) {
-        html = '<pre class="language-' + lang + ' prism" data-language="' + lang + '"><code class="language-' + lang + '">' +
+        html = '<pre class="prism"><code class="language-' + lang +
+            '" data-language="' + lang + '">' +
             html +
             '</code></pre>';
     }
