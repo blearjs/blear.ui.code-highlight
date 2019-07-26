@@ -5,7 +5,7 @@
  */
 .prism {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 20px 10px !important;
   font-size: 0;
   margin: 0 0 20px;
   background: #f5f2f0; }
