@@ -8,8 +8,11 @@
 
 .prism {
   @include prism();
-  color: black;
   background: #f5f2f0;
+
+  code {
+    color: #222;
+  }
 
   &::-moz-selection,
   code::-moz-selection {

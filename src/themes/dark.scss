@@ -9,7 +9,10 @@
 .prism {
   @include prism();
   background: #282c34;
-  color: #ccc;
+
+  code {
+    color: #ccc;
+  }
 
   .token.comment,
   .token.block-comment,
