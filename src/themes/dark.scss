@@ -10,6 +10,10 @@
   @include prism();
   background: #282c34;
 
+  &-highlight {
+    background: rgba(#0055ff, 0.2);
+  }
+
   code {
     color: #ccc;
   }

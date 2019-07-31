@@ -8,11 +8,10 @@
 
 .prism {
   @include prism();
-  $primary-color: #f97d02;
-  background: lighten($primary-color, 48%);
+  background: #fff8f1;
 
   &-highlight {
-    background: rgba($primary-color, 0.2);
+    background: rgba(#f97d02, 0.2);
   }
 
   code {

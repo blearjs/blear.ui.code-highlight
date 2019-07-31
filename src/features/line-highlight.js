@@ -39,6 +39,11 @@ Prism.hooks.add('complete', function (env) {
 
     attribute.addClass(preEl, className);
     var ranges = attribute.attr(preEl, 'data-highlight');
+
+    if (!ranges) {
+        return;
+    }
+
     var rangeList = ranges.replace(/\s+/, '').split(',').map(function (range) {
         var ranges = range.split('-');
         return [ranges[0], ranges[1] || ranges[0]];

@@ -36,6 +36,8 @@
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none; }
+  .prism-highlight {
+    background: rgba(0, 85, 255, 0.2); }
   .prism code {
     color: #ccc; }
   .prism .token.comment,
