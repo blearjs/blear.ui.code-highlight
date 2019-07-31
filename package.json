@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.code-highlight",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "代码高亮，基于 prism@1.17.1",
   "scripts": {
     "live": "browser-sync start --config bs-config.js",
