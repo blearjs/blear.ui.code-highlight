@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-less');
+require('../prismjs/components/prism-less');

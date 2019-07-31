@@ -8,4 +8,4 @@
 
 'use strict';
 
-require('../../prismjs/components/prism-bash');
+require('../prismjs/components/prism-bash');

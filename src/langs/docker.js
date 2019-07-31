@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-docker');
+require('../prismjs/components/prism-docker');

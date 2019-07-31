@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-lua');
+require('../prismjs/components/prism-lua');

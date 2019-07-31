@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-markdown');
+require('../prismjs/components/prism-markdown');

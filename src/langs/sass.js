@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-sass');
+require('../prismjs/components/prism-sass');

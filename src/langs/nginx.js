@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-nginx');
+require('../prismjs/components/prism-nginx');

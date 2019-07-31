@@ -8,13 +8,13 @@
 
 var string = require('blear.utils.string');
 
-var prism = require('../prismjs/prism');
+var prism = require('./prismjs/prism');
 
-require('../prismjs/components/prism-clike');
-require('../prismjs/components/prism-markup');
-require('../prismjs/components/prism-markup-templating');
-require('../prismjs/components/prism-css');
-require('../prismjs/components/prism-javascript');
+require('./prismjs/components/prism-clike');
+require('./prismjs/components/prism-markup');
+require('./prismjs/components/prism-markup-templating');
+require('./prismjs/components/prism-css');
+require('./prismjs/components/prism-javascript');
 
 /**
  * 高亮区域代码【浏览器渲染】
@@ -38,10 +38,10 @@ exports.text = function (text, lang, wrap) {
         : string.escapeHTML(text);
 
     if (wrap) {
-        html = '<pre class="prism"><code class="language-' + lang +
-            '" data-language="' + lang + '">' +
-            html +
-            '</code></pre>';
+        return string.assign('<pre class="prism" data-language="${l}"><code></code></pre>', {
+            h: html,
+            l: lang
+        });
     }
 
     return html;

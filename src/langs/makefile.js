@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-makefile');
+require('../prismjs/components/prism-makefile');

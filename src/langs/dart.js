@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-dart');
+require('../prismjs/components/prism-dart');

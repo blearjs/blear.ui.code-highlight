@@ -9,4 +9,4 @@
 'use strict';
 
 
-require('../../prismjs/components/prism-stylus');
+require('../prismjs/components/prism-stylus');
