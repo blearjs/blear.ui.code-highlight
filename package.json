@@ -3,9 +3,7 @@
   "version": "2.2.1",
   "description": "代码高亮，基于 prism@1.17.1",
   "scripts": {
-    "live": "browser-sync start --config bs-config.js",
-    "test": "node ./node_modules/.bin/karma start karma.conf.js --single-run",
-    "prepublish": "npm test"
+    "live": "browser-sync start --config bs-config.js"
   },
   "preferGlobal": false,
   "bin": {},
