@@ -10,6 +10,12 @@ var string = require('blear.utils.string');
 
 var prism = require('./prismjs/prism');
 
+// 内置基本语言
+require('./langs/c');
+require('./langs/js');
+require('./langs/css');
+require('./langs/html');
+
 
 /**
  * 高亮区域代码【浏览器渲染】
