@@ -8,6 +8,15 @@
 
 'use strict';
 
-require('./light.css', 'css|style');
+var scopeCSS = require('blear.utils.scope-css');
+var modification = require('blear.core.modification');
+
+/**
+ * 导入明亮样式
+ * @param scope
+ */
+module.exports = function (scope) {
+    modification.importStyle(scopeCSS(require('./light.css'), scope));
+};
 
 

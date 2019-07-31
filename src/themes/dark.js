@@ -8,6 +8,15 @@
 
 'use strict';
 
-require('./dark.css', 'css|style');
+var scopeCSS = require('blear.utils.scope-css');
+var modification = require('blear.core.modification');
+
+/**
+ * 导入暗黑样式
+ * @param scope
+ */
+module.exports = function (scope) {
+    modification.importStyle(scopeCSS(require('./dark.css'), scope));
+};
 
 
