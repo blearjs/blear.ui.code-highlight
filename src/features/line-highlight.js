@@ -8,6 +8,13 @@
 
 'use strict';
 
+var selector = require('blear.core.selector');
+var attribute = require('blear.core.attribute');
+var modification = require('blear.core.modification');
+
+
+// 依赖行号
+require('./line-numbers');
 
 Prism.hooks.add('complete', function (env) {
     var code = env.code;
@@ -25,10 +32,25 @@ Prism.hooks.add('complete', function (env) {
     }
 
     // Abort if line numbers already exists
-    var className = 'prism_nums';
+    var className = 'prism_lineHighlight';
     if (attribute.hasClass(preEl, className)) {
         return;
     }
 
+    attribute.addClass(preEl, className);
+    var ranges = attribute.attr(preEl, 'data-highlight');
+    var rangeList = ranges.replace(/\s+/, '').split(',').map(function (range) {
+        var ranges = range.split('-');
+        return [ranges[0], ranges[1] || ranges[0]];
+    });
+    var lineEls = selector.query('.prism-line', preEl);
 
+    rangeList.forEach(function (range) {
+        var start = range[0];
+        var end = range[1];
+
+        for (; start <= end; start++) {
+            attribute.addClass(lineEls[start - 1], 'prism-highlight');
+        }
+    });
 });

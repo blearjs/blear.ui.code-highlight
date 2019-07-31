@@ -8,7 +8,12 @@
 
 .prism {
   @include prism();
-  background: #f5f2f0;
+  $primary-color: #f97d02;
+  background: lighten($primary-color, 48%);
+
+  &-highlight {
+    background: rgba($primary-color, 0.2);
+  }
 
   code {
     color: #222;

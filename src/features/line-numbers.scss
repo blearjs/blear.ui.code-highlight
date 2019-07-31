@@ -11,17 +11,26 @@
     position: absolute;
     pointer-events: none;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
     padding-top: 20px;
     letter-spacing: -1px;
-    border-right: 1px solid #999;
-    width: 40px;
 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 40px;
+      bottom: 0;
+      width: 1px;
+      background: #999999;
+    }
   }
 
   &-line {
@@ -33,7 +42,7 @@
       content: counter(linenumber);
       color: #999;
       display: block;
-      padding-right: 0.8em;
+      width: 30px;
       text-align: right;
     }
   }

@@ -16,8 +16,8 @@ require('../src/langs/css');
 require('../src/langs/js');
 require('../src/themes/light');
 
-require('../src/features/line-numbers');
 require('../src/features/line-highlight');
+require('../src/features/line-numbers');
 
 
 codeHighlight.element();
