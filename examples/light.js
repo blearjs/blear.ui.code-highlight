@@ -8,7 +8,7 @@
 'use strict';
 
 var codeHighlight = require('../src/index');
-require('../src/themes/light');
+require('../src/themes/light')();
 
 require('../src/langs/c');
 require('../src/langs/html');

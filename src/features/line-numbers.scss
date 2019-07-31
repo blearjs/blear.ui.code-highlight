@@ -1,10 +1,10 @@
 .prism {
   &_lineNumbers {
     counter-reset: linenumber;
-  }
 
-  code {
-    margin-left: 30px;
+    code {
+      margin-left: 20px;
+    }
   }
 
   &-lines {

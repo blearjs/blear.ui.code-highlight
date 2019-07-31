@@ -37,7 +37,7 @@
     "blear.core.selector": "^1.0.11",
     "blear.utils.array": "^1.0.12",
     "blear.utils.loader": "^1.0.14",
-    "blear.utils.scope-css": "^2.0.5",
+    "blear.utils.scope-css": "^2.0.6",
     "blear.utils.string": "^1.0.10"
   },
   "peerDependencies": {},

@@ -1,8 +1,7 @@
 .prism_lineNumbers {
   counter-reset: linenumber; }
-
-.prism code {
-  margin-left: 30px; }
+  .prism_lineNumbers code {
+    margin-left: 20px; }
 
 .prism-lines {
   position: absolute;
