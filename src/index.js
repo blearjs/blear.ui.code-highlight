@@ -10,11 +10,6 @@ var string = require('blear.utils.string');
 
 var prism = require('./prismjs/prism');
 
-require('./prismjs/components/prism-clike');
-require('./prismjs/components/prism-markup');
-require('./prismjs/components/prism-markup-templating');
-require('./prismjs/components/prism-css');
-require('./prismjs/components/prism-javascript');
 
 /**
  * 高亮区域代码【浏览器渲染】

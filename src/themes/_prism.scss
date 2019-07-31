@@ -2,7 +2,7 @@
 
 @mixin prism() {
   position: relative;
-  padding: 20px 20px 20px 10px !important;
+  padding: 20px 20px 0 20px;
   font-size: 0;
   margin: 0 0 20px;
 
@@ -15,21 +15,23 @@
     font-weight: 900;
   }
 
-  &[class*=language-]:before {
+  &:before {
     content: attr(data-language);
   }
 
   code {
+    position: relative;
     display: block;
-    overflow: auto;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
-    white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
     font-size: 14px;
+    padding: 0 0 20px;
+    white-space: pre;
+    overflow: auto;
 
     tab-size: 4;
 

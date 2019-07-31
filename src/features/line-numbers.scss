@@ -1,0 +1,41 @@
+.prism {
+  &_lineNumbers {
+    counter-reset: linenumber;
+  }
+
+  code {
+    margin-left: 30px;
+  }
+
+  &-lines {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    width: 40px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &-line {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+
+    &:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: 0.8em;
+      text-align: right;
+    }
+  }
+}
+
