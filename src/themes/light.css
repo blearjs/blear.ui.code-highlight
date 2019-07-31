@@ -8,7 +8,7 @@
   padding: 20px 20px 0 20px;
   font-size: 0;
   margin: 0 0 20px;
-  background: #fff8f1; }
+  background: #f5f2f0; }
   .prism:before {
     position: absolute;
     right: 8px;
@@ -40,13 +40,6 @@
     background: rgba(249, 125, 2, 0.2); }
   .prism code {
     color: #222; }
-  .prism::-moz-selection,
-  .prism code::-moz-selection {
-    background: #b3d4fc; }
-  .prism::selection,
-  .prism code::selection {
-    text-shadow: none;
-    background: #b3d4fc; }
   @media print {
     .prism,
     .prism code {
